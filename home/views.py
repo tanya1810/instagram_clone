@@ -7,12 +7,6 @@ from user.models import *
 # Create your views here.
 @login_required
 def home(request):
-    u = User.objects.all()
-    for i in u:
-        u1 = User.objects.filter(email = i.email)
-        new = Friend.objects.create(user = i)
-        new.friends.set(u1)
-        new.save()
     if request.method == 'POST':
         print("post done#############")
         form = PostForm(request.POST, request.FILES)
@@ -33,3 +27,4 @@ def home(request):
         'form' : form,
     }
     return render(request, 'home/main.html', context=context)
+
