@@ -36,3 +36,6 @@ class FriendRequest(models.Model):
 	to_user 	= models.ForeignKey(User, related_name="to", on_delete=models.CASCADE)
 	is_accepted 	= models.BooleanField(default=False)
 
+	def __str__(self):
+		return str(self.from_user) + ' -> ' + str(self.to_user)
+

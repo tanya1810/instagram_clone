@@ -7,11 +7,10 @@
     <title>Find Friends</title>
 </head>
 <body>
-    {% for i in all_users %}
+    {% for i in req %}
     <ul>
         <li>{{i.name}}</li> 
-        <a href="{% url 'send-req' i.id %}">Send Request</a>
-        
+        <a href="{% url 'accept-req' i.id %}">Accept Request</a>
     </ul>
     {% endfor %}
 </body>
