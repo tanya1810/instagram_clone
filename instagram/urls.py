@@ -22,6 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('user.urls')),
     path('', include('home.urls')),
+    path('', include('whatsappBot.urls')),
+    path('', include('pwa.urls')),
+    path('', include('charts.urls')),
 ]
 
 if settings.DEBUG:
