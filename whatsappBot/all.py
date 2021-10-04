@@ -38,15 +38,7 @@ def get_message():
     return whatsapp_message
 
 
-def post_response(message):
-    global x, y
-    position = pt.locateOnScreen("whatsappBOT/smiley_and_paperclip.PNG", confidence = .6)
-    x = position[0]
-    y = position[1]
-    pt.moveTo(x+200, y+20, duration=.5)
-    pt.click()
-    pt.typewrite(message, interval=0.01)
-    pt.typewrite("\n", interval=0.01)
+
 
 
 
