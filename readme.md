@@ -32,3 +32,5 @@ pip install -r requirements.txt
 ```bash
 python manage.py testserver --addrport 8080
 ```
+
+5. Your server should now be running at http://localhost:8080
