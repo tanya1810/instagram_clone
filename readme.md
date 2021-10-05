@@ -1,13 +1,34 @@
-ABOUT THE PROJECT
+# INSTAGRAM CLONE
+The project have backend functions required to copy the Instagram App.
 
-The project have backend functions required to copy the Instagram App. 
+## Frameworks used
 
-BUILD WITH
+- Bootstrap
+- Django
+- Python
 
-Bootstrap
-Django
-Python
+## Scope
 
-FUTURE SCOPE
+- [ ] Make proper frontend for the project to be used as a Social Media Website for your College/Organization.
 
-With proper frontend the project can be used as a Social Media Website for your College/Organization.
+## Try it out!
+
+1. Clone the repo using 
+```bash
+git clone https://github.com/tanya1810/instagram_clone.git
+```
+
+2. Then, change to repo directory.
+```bash
+cd instagram_clone
+```
+
+3. Install requirements.
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the server using the following command.
+```bash
+python manage.py testserver --addrport 8080
+```
