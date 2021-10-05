@@ -3,9 +3,9 @@ The project have backend functions required to copy the Instagram App.
 
 ## Frameworks used
 
-- Bootstrap
-- Django
-- Python
+- [x] Bootstrap
+- [x] Django
+- [x] Python
 
 ## Scope
 
